@@ -2,7 +2,7 @@
 
 **Aplikasi Object Recognition Real-Time** – Sistem deteksi objek secara langsung di browser menggunakan **TensorFlow.js** dan model **COCO-SSD**. Dibangun dengan arsitektur full-stack modern: **React.js (Vite)** untuk frontend dan **Node.js + Express** untuk backend (opsional).
 
-> **Demo Live**: [https://your-app.vercel.app](https://your-app.vercel.app) *(ganti dengan link deployment Anda)*  
+> **Demo**:  `FE: http://localhost:5173 ; BE: http://localhost:5000`
 > **Repository**: `https://github.com/yourusername/object-recognition-realtime`
 
 ---
