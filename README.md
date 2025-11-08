@@ -176,6 +176,7 @@ Microsoft COCO Dataset
 Vite & React Community
 
 
+Onedrive: https://mikroskilacid-my.sharepoint.com/:f:/g/personal/221111917_students_mikroskil_ac_id/Eu6Z5oDs5ptHmA1iMf3ZHvwB_-Lk5jTYHUQPieBCALH8Tg?e=85W2U0
 
 Tugas Akhir – Teknik Informatika
 Artolito Chandra, Bryan Yapiter, Nicholas Tio
