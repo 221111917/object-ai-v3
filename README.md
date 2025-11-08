@@ -133,22 +133,31 @@ Panel "Detected Objects" dengan confidence score
 Hasil yang Dicapai
 
 Metrik,Hasil
-Kelas Objek,80+ (COCO Dataset)
-FPS (Desktop),20–30 FPS
-FPS (Mobile),15–25 FPS
-Latensi Deteksi,<100ms (client mode)
-Akurasi Umum,"Baik untuk objek umum (person, car, chair, dll)"
-Kondisi Pencahayaan,Konsisten di cahaya normal hingga redup
+| Kelas Objek           | 80+ (COCO Dataset)  |
+| FPS (Desktop)         | 20–30 FPS           |
+| FPS (Mobile)          | 15–25 FPS           |
+| Latensi Deteksi       | <100ms (client mode)  |
+| Akurasi Umum          | "Baik untuk objek umum (person, car, chair, dll)"  |
+| Kondisi Pencahayaan   | Konsisten di cahaya normal hingga redup            |
 
-Arsitektur Sistem
 
-[User Browser]
-     │
-     ├─── Camera Stream (getUserMedia)
-     │
-     ├─── [Client Mode] ──► TensorFlow.js + COCO-SSD (in-browser)
-     │
-     └─── [Server Mode] ──► POST frame ke /detect → Node.js → tfjs-node → Response
+## 🏗️ Arsitektur Sistem
+
+flowchart TD
+    A[User Browser] --> B(Camera Stream<br>getUserMedia API)
+    
+    B --> C{Mode Deteksi}
+    
+    C -->|Client Mode| D[TensorFlow.js + COCO-SSD<br>Processing di Browser]
+    C -->|Server Mode| E[POST Frame ke /detect]
+    
+    E --> F[Backend: Node.js + Express]
+    F --> G[@tensorflow/tfjs-node<br>Inference di Server]
+    G --> H[Response: Bounding Boxes + Scores]
+    H --> A
+    
+    style D fill:#e3f2fd,stroke:#1976d2,color:#000
+    style G fill:#f3e5f5,stroke:#7b1fa2,color:#000
 
 Kelebihan Sistem:
 
