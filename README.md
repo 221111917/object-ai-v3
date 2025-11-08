@@ -70,8 +70,8 @@ Menggunakan:
 | Express.js | `^4.18.0` |
 
 ### Deployment
-- **Frontend**: [Vercel](https://vercel.com) / [Netlify](https://netlify.com)
-- **Backend**: [Render](https://render.com) / [Heroku](https://heroku.com)
+- **Frontend**: [Local]((http://localhost:5173))
+- **Backend**: [Local]((http://localhost:5000))
 
 ---
 
