@@ -70,8 +70,8 @@ Menggunakan:
 | Express.js | `^4.18.0` |
 
 ### Deployment
-- **Frontend**: [Local]((http://localhost:5173))
-- **Backend**: [Local]((http://localhost:5000))
+- **Frontend**: [Local] ```http://localhost:5173```
+- **Backend**: [Local] ```http://localhost:5000```
 
 ---
 
